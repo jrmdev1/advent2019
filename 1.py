@@ -20,8 +20,7 @@ def fuel_amt(mass):
 def part_a():
     fuel = 0
     for mass in modules:
-        fuelmod = mass//3 - 2
-        fuel += fuelmod
+        fuel += fuel_amt(mass)
     print(f"day1a fuel = {fuel}")
 
 def part_b():
